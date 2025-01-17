@@ -9,7 +9,8 @@ on:
 
 jobs:
   build_images:
-    runs-on: ubuntu-latest
+    runs-on: 
+      group: ubuntu-dind # Test new self-hosted runner
     permissions:
       contents: read
       packages: write
